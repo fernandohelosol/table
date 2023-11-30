@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootstrap Table</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+</head>
+
+<body>
+  <div class="container-sm">
+    <table id="table" data-toggle="table" data-search="true" data-show-columns="true" data-toolbar="#toolbar"
+      data-show-refresh="true" data-show-toggle="true" data-show-fullscreen="true" data-show-columns="true"
+      data-show-columns-toggle-all="true" data-show-export="true" data-click-to-select="true"
+      data-detail-formatter="detailFormatter" data-minimum-count-columns="2" data-show-pagination-switch="true"
+      data-pagination="true" data-id-field="id" data-page-list="[10, 25, 50, 100, all]" data-show-footer="true"
+      data-show-export="true" data-filter-control="true" data-mobile-responsive="true" data-show-multi-sort="true">
+      <thead>
+        <tr>
+          <th data-sortable="true" data-field="id" data-filter-control="input">id</th>
+          <th data-sortable="true" data-field="device_id" data-filter-control="select">device_id</th>
+          <th data-sortable="true" data-field="client_name" data-filter-control="select">client_name</th>
+          <th data-sortable="true" data-field="card" data-filter-control="select">card</th>
+          <th data-sortable="true" data-field="old_balance" data-filter-control="select">old_balance</th>
+          <th data-sortable="true" data-field="new_balance" data-filter-control="select">new_balance</th>
+          <th data-sortable="true" data-field="cost" data-filter-control="select">cost</th>
+          <th data-sortable="true" data-field="sucursal_name" data-filter-control="select">sucursal_name</th>
+          <th data-sortable="true" data-field="sucursal_id" data-filter-control="select">sucursal_id</th>
+          <th data-sortable="true" data-field="timestamp" data-filter-control="select">timestamp</th>
+          <th data-sortable="true" data-field="transaction_type" data-filter-control="select">transaction_type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>91</td>
+          <td>206</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:46</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>92</td>
+          <td>206</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:47</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>93</td>
+          <td>206</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:48</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>94</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:49</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>95</td>
+          <td>201</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:50</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>96</td>
+          <td>206</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:52</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>202</td>
+          <td>spumma_maestra</td>
+          <td>21118386169</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>SPUMMA_CANDILES</td>
+          <td>6</td>
+          <td>2023-11-30 11:54:54</td>
+          <td>saldo_insuficiente</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="module" src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/export/bootstrap-table-export.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+  <script
+    src="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+  <script
+    src="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jqueryui@1.11.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/akottr/dragtable@master/jquery.dragtable.js"></script>
+  <script
+    src="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js"></script>
+  <script>
+
+    var $table = $('#table')
+
+    $(function () {
+      $('#toolbar').find('select').change(function () {
+        $table.bootstrapTable('destroy').bootstrapTable({
+          exportDataType: $(this).val(),
+          exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
+          columns: [
+            {
+              field: 'state',
+              checkbox: true,
+              visible: $(this).val() === 'selected'
+            },
+            {
+              field: 'id',
+              title: 'ID'
+            }, {
+              field: 'name',
+              title: 'Item Name'
+            }, {
+              field: 'price',
+              title: 'Item Price'
+            }
+          ]
+        })
+      }).trigger('change')
+    })
+  </script>
+
+</body>
+
+</html>
